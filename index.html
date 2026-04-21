@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adam Septian Bintara — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">ADAMSB<span class="dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">Tentang</a>
+      <a href="#skills">Keahlian</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-tag reveal">Mahasiswa Teknik Informatika</p>
+      <h1 class="hero-name reveal">Adam Septian<br/><span class="accent">Bintara</span></h1>
+      <p class="hero-sub reveal">D4 Rekayasa Perangkat Lunak<br/>Politeknik Negeri Indramayu</p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">ASB</span>
+        </div>
+      </div>
+      <div class="floating-chip chip-1"><i class="fa-brands fa-js"></i> JavaScript</div>
+      <div class="floating-chip chip-2"><i class="fa-brands fa-laravel"></i> Laravel</div>
+      <div class="floating-chip chip-3"><i class="fa-solid fa-database"></i> MySQL</div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label reveal">— Tentang Saya</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2>Membangun solusi digital<br/>yang <span class="accent">bermakna</span></h2>
+          <p>Halo! Saya Adam, mahasiswa D4 Rekayasa Perangkat Lunak di Politeknik Negeri Indramayu. Saya passionate dalam mengembangkan aplikasi web yang fungsional, efisien, dan mudah digunakan.</p>
+          <p>Saya menikmati proses dari desain hingga implementasi — terus belajar teknologi baru dan menerapkannya dalam proyek nyata.</p>
+          <div class="about-badges">
+            <div class="badge"><i class="fa-solid fa-graduation-cap"></i> Politeknik Negeri Indramayu</div>
+            <div class="badge"><i class="fa-solid fa-location-dot"></i> Indramayu, Jawa Barat</div>
+            <div class="badge"><i class="fa-solid fa-code"></i> Web Developer</div>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-num" data-target="10">0</span>
+            <span class="stat-label">Proyek Selesai</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="4">0</span>
+            <span class="stat-label">Tahun Belajar</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="8">0</span>
+            <span class="stat-label">Teknologi</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-label">Organisasi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label reveal">— Keahlian</div>
+      <h2 class="section-title reveal">Tech Stack & Keahlian</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-title"><i class="fa-solid fa-layer-group"></i> Frontend</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">HTML & CSS</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Bootstrap / Tailwind</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title"><i class="fa-solid fa-server"></i> Backend</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">PHP</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Laravel</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title"><i class="fa-solid fa-database"></i> Database & Tools</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">MySQL</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git & GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Figma</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label reveal">— Proyek</div>
+      <h2 class="section-title reveal">Proyek Pilihan</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Sistem Manajemen Toko</h3>
+          <p class="project-desc">Aplikasi manajemen penjualan berbasis web dengan fitur kasir, laporan stok, dan dashboard admin menggunakan Laravel.</p>
+          <div class="project-tags">
+            <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Portal Akademik Mahasiswa</h3>
+          <p class="project-desc">Platform informasi akademik mahasiswa dengan fitur nilai, jadwal kuliah, dan pengumuman kampus secara real-time.</p>
+          <div class="project-tags">
+            <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-notes-medical"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Aplikasi Klinik Sederhana</h3>
+          <p class="project-desc">Sistem pencatatan pasien, antrian, dan rekam medis untuk klinik kecil berbasis web yang responsif.</p>
+          <div class="project-tags">
+            <span>Laravel</span><span>Tailwind</span><span>Alpine.js</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label reveal">— Kontak</div>
+      <h2 class="section-title reveal">Mari Berkolaborasi</h2>
+      <p class="contact-sub reveal">Ada proyek menarik atau ingin berdiskusi? Jangan ragu untuk menghubungi saya!</p>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <a href="mailto:adam@email.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="ci-label">Email</span>
+              <span class="ci-val">adam@email.com</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <span class="ci-label">LinkedIn</span>
+              <span class="ci-val">Adam Septian Bintara</span>
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="ci-label">GitHub</span>
+              <span class="ci-val">@adamseptian</span>
+            </div>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="contact-item">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <span class="ci-label">Instagram</span>
+              <span class="ci-val">@adamseptian</span>
+            </div>
+          </a>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" placeholder="Nama kamu" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email@contoh.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" rows="4" placeholder="Tuliskan pesanmu di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Kirim Pesan <i class="fa-solid fa-paper-plane"></i></button>
+          <div class="form-success" id="formSuccess">✓ Pesan berhasil dikirim!</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 <strong>Adam Septian Bintara</strong> · D4 RPL · Politeknik Negeri Indramayu</p>
+      <p class="footer-sub">Dibuat dengan <i class="fa-solid fa-heart"></i> dan banyak kopi ☕</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
