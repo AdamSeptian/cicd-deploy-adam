@@ -15,14 +15,25 @@ jobs:
 
       - name: Setup SSH
         run: |
+          # Buat direktori .ssh jika belum ada
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/tes_server_polindra
+          
+          # Tulis Private Key dari Secret ke file dengan format yang aman
+          cat <<EOF > ~/.ssh/tes_server_polindra
+          ${{ secrets.SSH_PRIVATE_KEY }}
+          EOF
+          
+          # Atur izin akses file kunci (wajib 600)
           chmod 600 ~/.ssh/tes_server_polindra
+          
+          # Ambil fingerprint server agar tidak ditanya "yes/no" saat koneksi
           ssh-keyscan -p 8022 -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: Deploy to Server
         run: |
+          # Sinkronisasi file menggunakan rsync
+          # -a: archive mode, -v: verbose, -z: compress, --delete: hapus file di server jika di repo sudah tidak ada
           rsync -avz --delete \
-          -e "ssh -p 8022 -i ~/.ssh/tes_server_polindra" \
+          -e "ssh -p 8022 -i ~/.ssh/tes_server_polindra -o StrictHostKeyChecking=no" \
           ./ \
           ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH }}
